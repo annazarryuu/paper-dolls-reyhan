@@ -25,9 +25,9 @@ public class Movement : MonoBehaviour
         if(Input.GetMouseButtonDown(1))
         {
             target = Camera.main.ScreenToWorldPoint(Input.mousePosition).x;
-            if (!isMove) isMove = true;
+            if (!isMove && !isFungusShows) isMove = true;
         }
-        if (isMove && !isFungusShows)
+        if (isMove)
         {
             Vector3 pos = transform.position;
             if (target >= xPosLim) target = xPosLim;
