@@ -16,11 +16,13 @@ public class CamMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Vector3 initPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         if (!isFungusShows)
         {
             if (Input.GetMouseButtonDown(0))
             {
                 startPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                Debug.Log("A: " + startPos);
             }
             if (Input.GetMouseButton(0))
             {
@@ -28,6 +30,7 @@ public class CamMovement : MonoBehaviour
                 Vector3 pos = Camera.main.transform.position;
                 pos.x += direction.x;
                 Camera.main.transform.position = pos;
+               // Debug.Log("B: " + Camera.main.transform.pos);
             }
         }
     }
