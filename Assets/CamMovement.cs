@@ -16,7 +16,7 @@ public class CamMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 initPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        // Vector3 initPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         if (Input.GetMouseButtonDown(0))
         {
             startPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
