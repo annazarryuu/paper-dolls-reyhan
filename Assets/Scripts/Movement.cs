@@ -29,12 +29,15 @@ public class Movement : MonoBehaviour
     {
         if(Input.GetMouseButtonDown(1))
         {
+            anim.SetBool("isMoving", true);
             target = Camera.main.ScreenToWorldPoint(Input.mousePosition).x;
-            if (!isMove && !isFungusShows) isMove = true;
+            if (!isMove && !isFungusShows)
+            {
+                isMove = true;
+            }
         }
         if (isMove)
         {
-
             Vector3 pos = transform.position;
             if (target >= xPosLim) target = xPosLim;
             if (target <= xNegLim) target = xNegLim;
@@ -42,8 +45,9 @@ public class Movement : MonoBehaviour
 			else if (target > transform.position.x) transform.localScale = faceRight;
 			pos.x = Mathf.MoveTowards(transform.position.x, target, speed * Time.deltaTime);
             transform.position = pos;
+            if (pos.x == target) isMove = false;
         }
-		anim.SetBool("isMoving", isMove);
+        anim.SetBool("isMoving", isMove);
 	}
 
     void SetPlayerAvailability()

@@ -1141,7 +1141,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 933323133}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 933323134}
   variables: []
   description: 
   stepPause: 0
@@ -1199,7 +1200,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 5
   indentLevel: 0
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 1074659574}
   methodName: SetPlayerAvailability
   delay: 0
 --- !u!114 &933323135
@@ -1297,7 +1298,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 1
   indentLevel: 0
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 1074659574}
   methodName: SetPlayerAvailability
   delay: 0
 --- !u!114 &933323139
