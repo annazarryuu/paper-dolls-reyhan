@@ -17,13 +17,12 @@ public class CamMovement : MonoBehaviour
     void Update()
     {
         Vector3 initPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        if (Input.GetMouseButtonDown(0))
+        {
+            startPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        }
         if (!isFungusShows)
         {
-            if (Input.GetMouseButtonDown(0))
-            {
-                startPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                Debug.Log("A: " + startPos);
-            }
             if (Input.GetMouseButton(0))
             {
                 Vector3 direction = startPos - Camera.main.ScreenToWorldPoint(Input.mousePosition);
