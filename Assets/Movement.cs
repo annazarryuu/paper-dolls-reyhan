@@ -11,6 +11,7 @@ public class Movement : MonoBehaviour
     public float xNegLim;
     
     private bool isMove = false;
+    private bool isFungusShows = false;
     private float target;
     // Start is called before the first frame update
     void Start()
@@ -26,7 +27,7 @@ public class Movement : MonoBehaviour
             target = Camera.main.ScreenToWorldPoint(Input.mousePosition).x;
             if (!isMove) isMove = true;
         }
-        if (isMove)
+        if (isMove && !isFungusShows)
         {
             Vector3 pos = transform.position;
             if (target >= xPosLim) target = xPosLim;
@@ -34,5 +35,11 @@ public class Movement : MonoBehaviour
             pos.x = Mathf.MoveTowards(transform.position.x, target, speed * Time.deltaTime);
             transform.position = pos;
         }
+    }
+
+    void SetPlayerAvailability()
+    {
+        if (!isFungusShows) isFungusShows = true;
+        else isFungusShows = false;
     }
 }
