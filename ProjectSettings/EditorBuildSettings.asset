@@ -12,8 +12,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Prologue.unity
     guid: 4cce16d2b5ed81647a3e8c99bae5c781
   - enabled: 1
-    path: Assets/Scenes/CrashWithChika.unity
-    guid: 0171ccc5bd8a06f459de92f6c2c98209
+    path: Assets/Scenes/Ruang BK.unity
+    guid: 04543d517e889254db421ca0593dfea0
+  - enabled: 1
+    path: Assets/Scenes/LaraEncounter2nd.unity
+    guid: a80a8fdd81c812f4b8f3b10af871c762
   - enabled: 1
     path: Assets/Scenes/MeetLaraCutscene.unity
     guid: 0845c15cf38b75b40b6cea585171c86e
