@@ -16,6 +16,7 @@ public class LaraEncounter2nd : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        dm = new DecisionManager().get();
         bool b = dm.getBlackmailStatus();
         print(b);
     }

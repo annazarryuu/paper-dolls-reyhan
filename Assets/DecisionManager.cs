@@ -5,27 +5,37 @@ using UnityEngine;
 public class DecisionManager : MonoBehaviour
 {
     // Start is called before the first frame update
-    private static DecisionManager dm;
-    private bool blackmail;
+    private static DecisionManager dm = null;
+    private static bool blackmail;
+
+    public DecisionManager()
+    {
+
+    }
 
     void Start()
     {
-        if(dm == null)
+        if (dm == null)
         {
-            dm = gameObject.AddComponent<DecisionManager>();
             DontDestroyOnLoad(this.gameObject);
+            dm = new DecisionManager().get();
         }
     }
 
     public DecisionManager get()
     {
-        return this;
+        if (dm == null)
+        {
+            Debug.Log("Test A");
+            dm = new DecisionManager();
+        }
+        return dm;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     void ChooseBlackmail()
@@ -40,6 +50,6 @@ public class DecisionManager : MonoBehaviour
 
     public bool getBlackmailStatus()
     {
-        return this.blackmail;
+        return blackmail;
     }
 }
