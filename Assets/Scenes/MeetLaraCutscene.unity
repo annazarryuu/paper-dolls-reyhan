@@ -1084,7 +1084,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Apa itu??
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1644560572}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -1171,7 +1171,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 2044400409}
   selectedCommands:
-  - {fileID: 2044400412}
+  - {fileID: 2044400406}
   variables: []
   description: 
   stepPause: 0
@@ -1362,9 +1362,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 15
   indentLevel: 0
-  storyText: Suuutt!! Jangan bilang-bilang ya, saya sembunyi di sini.
+  storyText: Shhh!! Jangan bilang-bilang ya, saya sembunyi di sini.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1481435191}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -1391,7 +1391,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Ehhh
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1644560572}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -1418,7 +1418,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Mmm, saya males ketemu guru BK, hehehe...
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1481435191}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -1445,7 +1445,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: eheheh...hehehe
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1644560572}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -1472,7 +1472,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Nanti aku kasih hadiah deh
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1481435191}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -1499,7 +1499,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: WOKEE!!!
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1644560572}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -1526,7 +1526,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Uwah!!!
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1644560572}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -1551,9 +1551,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 7
   indentLevel: 0
-  storyText: Suuuuutt!!!!
+  storyText: Shhh!!!!
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1481435191}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
