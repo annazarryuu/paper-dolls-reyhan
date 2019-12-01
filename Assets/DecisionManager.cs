@@ -12,7 +12,7 @@ public class DecisionManager : MonoBehaviour
     {
         if(dm == null)
         {
-            dm = new DecisionManager();
+            dm = gameObject.AddComponent<DecisionManager>();
             DontDestroyOnLoad(this.gameObject);
         }
     }
