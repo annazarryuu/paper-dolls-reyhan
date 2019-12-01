@@ -20,7 +20,7 @@ public class LaraEncounter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (player.transform.position.x <= 4.87 && counter == 0)
+        if (player.transform.position.x <= 6 && counter == 0)
         {
             Fungus.Flowchart.BroadcastFungusMessage("surprised");
             counter++;
@@ -34,10 +34,6 @@ public class LaraEncounter : MonoBehaviour
         {
             Fungus.Flowchart.BroadcastFungusMessage("start");
             counter++;
-        }
-        if(counter == 3)
-        {
-            StartCoroutine(delay(5));
         }
 
 
@@ -55,10 +51,14 @@ public class LaraEncounter : MonoBehaviour
     //    }
     //}
 
-    IEnumerator delay(float time)
+    private void configureAnim()
     {
-        yield return new WaitForSeconds(time);
+        if(player.GetComponent<Movement>().enabled) player.GetComponent<Movement>().enabled = false;
+        else player.GetComponent<Movement>().enabled = true;
+    }
 
+    private void hideLara()
+    {
         lara.SetActive(false);
     }
 }
