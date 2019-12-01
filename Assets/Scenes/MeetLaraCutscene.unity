@@ -1294,6 +1294,7 @@ GameObject:
   - component: {fileID: 2044400430}
   - component: {fileID: 2044400429}
   - component: {fileID: 2044400428}
+  - component: {fileID: 2044400431}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -1358,7 +1359,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 67
     y: 70
-    width: 131.42853
+    width: 123.13429
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1390,19 +1391,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -47.78188, y: 32.221424}
+  scrollPos: {x: 4.757353, y: -12.481398}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.7000003
+  zoom: 0.6700003
   scrollViewRect:
     serializedVersion: 2
     x: -343
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 2044400409}
+  selectedCommands:
+  - {fileID: 2044400431}
   variables: []
   description: 
   stepPause: 0
@@ -1811,7 +1814,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 229.85713
     y: 87
-    width: 157.14282
+    width: 147.01488
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1842,6 +1845,7 @@ MonoBehaviour:
   - {fileID: 2044400399}
   - {fileID: 2044400412}
   - {fileID: 2044400415}
+  - {fileID: 2044400431}
 --- !u!114 &2044400410
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -2339,7 +2343,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 102.067566
-    y: 196.34991
+    y: 194.85738
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -2350,3 +2354,20 @@ MonoBehaviour:
   eventHandler: {fileID: 2044400429}
   commandList:
   - {fileID: 2044400428}
+--- !u!114 &2044400431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2044400386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 56
+  indentLevel: 0
+  targetObject: {fileID: 16062815}
+  methodName: NextScene
+  delay: 0

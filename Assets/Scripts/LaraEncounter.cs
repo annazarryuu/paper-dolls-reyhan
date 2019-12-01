@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LaraEncounter : MonoBehaviour
 {
@@ -61,4 +62,9 @@ public class LaraEncounter : MonoBehaviour
     {
         lara.SetActive(false);
     }
+
+	public void NextScene()
+	{
+		SceneManager.LoadScene(4);
+	}
 }
