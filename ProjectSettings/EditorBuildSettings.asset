@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Prologue.unity
     guid: 4cce16d2b5ed81647a3e8c99bae5c781
+  - enabled: 1
+    path: Assets/Scenes/CrashWithChika.unity
+    guid: 0171ccc5bd8a06f459de92f6c2c98209
   m_configObjects: {}
