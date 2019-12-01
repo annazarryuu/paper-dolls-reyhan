@@ -399,6 +399,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1242637995
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1242637996}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1242637996
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1242637995}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -551.8602, y: 347.02444, z: -11.21645}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1265365400
 GameObject:
   m_ObjectHideFlags: 0
@@ -772,6 +802,7 @@ GameObject:
   - component: {fileID: 1663061818}
   - component: {fileID: 1663061817}
   - component: {fileID: 1663061819}
+  - component: {fileID: 1663061820}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -806,7 +837,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1663061805}
   selectedCommands:
-  - {fileID: 1663061816}
+  - {fileID: 1663061820}
   variables: []
   description: 
   stepPause: 0
@@ -2154,6 +2185,7 @@ MonoBehaviour:
   eventHandler: {fileID: 1663061808}
   commandList:
   - {fileID: 1663061816}
+  - {fileID: 1663061820}
   - {fileID: 1663061814}
   - {fileID: 1663061815}
   - {fileID: 1663061813}
@@ -2526,6 +2558,23 @@ MonoBehaviour:
   move: 0
   shiftIntoPlace: 0
   waitUntilFinished: 0
+--- !u!114 &1663061820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1663061755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 69
+  indentLevel: 0
+  soundClip: {fileID: 8300000, guid: a985bb87ca635044391476dd153b41be, type: 3}
+  volume: 1
+  waitUntilFinished: 1
 --- !u!1 &1664719574
 GameObject:
   m_ObjectHideFlags: 0
